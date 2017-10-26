@@ -1,3 +1,3 @@
-const $package_var = require("$package_name");
+const unthis = require("unthis");
 
-console.log({ $package_var });
+console.log({ unthis });

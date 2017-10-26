@@ -1,9 +1,9 @@
-# $package_name
+# unthis
 
-[![Travis Build Status](https://img.shields.io/travis/$package_author/$package_name/master.svg)](http://travis-ci.org/$package_author/$package_name)
-[![NPM downloads](https://img.shields.io/npm/dt/$package_name.svg)](https://npmjs.org/package/$package_name)
+[![Travis Build Status](https://img.shields.io/travis/parro-it/unthis/master.svg)](http://travis-ci.org/parro-it/unthis)
+[![NPM downloads](https://img.shields.io/npm/dt/unthis.svg)](https://npmjs.org/package/unthis)
 
-> $package_description
+> Given a method, return a function that accept `this` as last argument
 
 background details relevant to understanding what this module does
 
@@ -12,9 +12,9 @@ background details relevant to understanding what this module does
 description of the example
 
 ```js
-const $package_var = require('$package_name');
+const unthis = require('unthis');
 
-console.log({$package_var});
+console.log({unthis});
 ```
 
 This will output
@@ -29,7 +29,7 @@ This will output
 With [npm](https://npmjs.org/) installed, run
 
 ```bash
-npm install --save $package_name
+npm install --save unthis
 ```
 
 ## See Also
