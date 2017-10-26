@@ -4,12 +4,7 @@ export package_author_name=`npm config get init-author-name`
 export package_author_email=`npm config get init-author-email`
 export package_var=`echo $package_name | sed -r 's/([a-z]+)-([a-z])?([a-z]*)-?([a-z])?([a-z]*)-?([a-z])?([a-z]*)/\1\U\2\L\3\U\4\L\5\U\6\L\7/'`
 
-echo current_year: $current_year
-echo package_author_name: $package_author_name
-echo package_author_email: $package_author_email
-echo package_var: $package_var
-
-printf "Package description: " && read package_description
+printf "\n\nPackage description: " && read package_description
 export package_description
 
 echo Template repo locally cloned. Running template init procedure.
