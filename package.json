@@ -5,16 +5,21 @@
   "repository": "$package_author/$package_name",
   "author": "$package_author_name <$package_author_email>",
   "license": "MIT",
-  "files": [
-    "index.js",
-    "example.js",
-    "main.js"
-  ],
+  "files": ["index.js", "example.js"],
   "scripts": {
-    "test": "rollup -c && ava && xo --ignore example.js --ignore index.js",
-    "doc": "documentation readme main.js --section=API"
+    "test": "ava && linterjs .",
+    "dev": "ava --watch & linterjs . --watch",
+    "start": "node -r @std/esm ./index.js",
+    "doc": "documentation readme index.js --section=API"
   },
+  "engines": { "node": ">8.8" },
   "keywords": [],
   "tonicExampleFilename": "example.js",
-  "module": "main.js"
+  "ava": {
+    "require": ["@std/esm"]
+  },
+  "@std/esm": {
+    "esm": "js",
+    "cjs": true
+  }
 }

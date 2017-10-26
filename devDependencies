@@ -1,4 +1,4 @@
 ava
-rollup
-xo
+@std/esm
+linterjs
 documentation

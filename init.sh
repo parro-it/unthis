@@ -1,7 +1,7 @@
 #!/bin/bash
 export current_year=`date +"%Y"`
-export package_author_name=`yarn config get init-author-name`
-export package_author_email=`yarn config get init-author-email`
+export package_author_name=`npm config get init-author-name`
+export package_author_email=`npm config get init-author-email`
 export package_var=`echo $package_name | sed -r 's/([a-z]+)-([a-z])?([a-z]*)-?([a-z])?([a-z]*)-?([a-z])?([a-z]*)/\1\U\2\L\3\U\4\L\5\U\6\L\7/'`
 printf "Package description: " && read package_description
 export package_description
@@ -25,7 +25,7 @@ for templateFile in $(find ./*); do
 done;
 
 # install dev dependencies
-yarn add --dev `cat ./devDependencies`
+npm i --save-dev `cat ./devDependencies`
 rm ./devDependencies
 rm init.sh
 
