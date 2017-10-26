@@ -18,7 +18,10 @@
   "engines": {
     "node": ">8.8"
   },
-  "keywords": [],
+  "keywords": [
+    "functional",
+    "utilities"
+  ],
   "tonicExampleFilename": "example.js",
   "ava": {
     "require": [
@@ -33,6 +36,11 @@
     "@std/esm": "^0.12.4",
     "ava": "^0.23.0",
     "documentation": "^5.3.3",
-    "linterjs": "^1.8.0"
+    "filter-obj": "^1.1.0",
+    "linterjs": "^1.8.0",
+    "map-obj": "^2.0.0"
+  },
+  "dependencies": {
+    "curry": "^1.2.0"
   }
 }
