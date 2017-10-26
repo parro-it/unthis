@@ -1,6 +1,6 @@
 {
   "name": "unthis",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Given a method, return a function that accept `this` as last argument",
   "repository": "parro-it/unthis",
   "author": "Andrea Parodi <andrea@parro.it>",
